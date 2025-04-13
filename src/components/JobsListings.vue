@@ -1,0 +1,28 @@
+<script setup>
+import JobData from '@/jobs.json';
+import { ref } from 'vue';
+
+const jobs = ref(JobData);
+</script>
+
+<template>
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center text-success fw-bold">Browse Jobs</h2>
+
+        <div class="row g-4">
+            <div class="col-lg-6" v-for="job in jobs" :key="job.id">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ job.title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ job.type }}</h6>
+                        <p class="card-text">{{ job.description }}</p>
+                        <p class="mb-1"><strong>Salary:</strong> {{ job.salary }}</p>
+                        <hr>
+                        <h6 class="mb-1">Company: {{ job.company.name }}</h6>
+                        <p class="text-muted">{{ job.company.description }}.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

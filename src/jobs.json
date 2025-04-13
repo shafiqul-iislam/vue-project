@@ -1,0 +1,36 @@
+[
+{    
+    "id":1,
+    "title": "Senior Vue Developer",
+    "type": "Full-Time",
+    "description": "We are seeking a talented Front-End Developer to join Our team in Dhaka. Your role is to develop a web application using Vue.js.",
+    "salary": "BDT 25K-30K",
+    "company": {
+        "name": "Yellow Tech",
+        "description": "Reputed company leading software company in Bangladesh."
+    }    
+},
+{    
+    "id":2,
+    "title": "Senior Laravel Developer",
+    "type": "Full-Time",
+    "description": "We are seeking a talented Back-End Developer to join Our team in Dhaka. Your role is to develop a web application using Laravel.",
+    "salary": "BDT 35K-40K",
+    "company": {
+        "name": "Yellow Tech",
+        "description": "Reputed company leading software company in Bangladesh."
+    }    
+}
+,
+{    
+    "id":3,
+    "title": "Senior React Developer",
+    "type": "Full-Time",
+    "description": "We are seeking a talented Front-End Developer to join Our team in Dhaka. Your role is to develop a web application using React.js.",
+    "salary": "BDT 30K-35K",
+    "company": {
+        "name": "Yellow Tech",
+        "description": "Reputed company leading software company in Bangladesh."
+    }    
+}
+]
