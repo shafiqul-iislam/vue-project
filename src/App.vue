@@ -14,5 +14,5 @@ import JobsListings from './components/JobsListings.vue';
 
     <HomeCards />
 
-    <JobsListings />
+    <JobsListings :limit="3" :showButton="true" />
 </template>

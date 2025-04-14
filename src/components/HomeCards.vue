@@ -13,7 +13,7 @@ import Card from '@/components/Card.vue'
                             <h5 class="card-title mb-1">From Frontend Developer</h5>
                             <p class="text-muted mb-0">Company XYZ - Remote</p>
                         </div>
-                        <a href="#" class="btn btn-primary">Browse Jobs</a>
+                        <a href="#" class="btn btn-success">Browse Jobs</a>
                     </div>
                 </Card>
             </div>
@@ -24,7 +24,7 @@ import Card from '@/components/Card.vue'
                             <h5 class="card-title mb-1">For Backend Developer</h5>
                             <p class="text-muted mb-0">Company ABC - New York, USA</p>
                         </div>
-                        <a href="#" class="btn btn-primary">Browse Jobs</a>
+                        <a href="#" class="btn btn-success">Browse Jobs</a>
                     </div>
                 </Card>
             </div>
