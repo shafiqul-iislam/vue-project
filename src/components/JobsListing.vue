@@ -7,10 +7,6 @@ const props = defineProps({
 
 const showFullDescription = ref(false);
 
-const toggleFullDescription = () => {
-    showFullDescription.value = !showFullDescription.value
-}
-
 const truncatedDescription = computed(() => {
     let description = props.jobs.description;
 
@@ -20,6 +16,11 @@ const truncatedDescription = computed(() => {
 
     return description
 });
+
+
+const toggleFullDescription = () => {
+    showFullDescription.value = !showFullDescription.value
+}
 
 </script>
 

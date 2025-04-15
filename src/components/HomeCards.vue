@@ -1,5 +1,7 @@
 <script setup>
-import Card from '@/components/Card.vue'
+import Card from '@/components/Card.vue';
+import { RouterLink } from 'vue-router';
+
 </script>
 
 <template>
@@ -13,7 +15,7 @@ import Card from '@/components/Card.vue'
                             <h5 class="card-title mb-1">From Frontend Developer</h5>
                             <p class="text-muted mb-0">Company XYZ - Remote</p>
                         </div>
-                        <a href="#" class="btn btn-success">Browse Jobs</a>
+                        <RouterLink to="/jobs" class="btn btn-success">Browse Jobs</RouterLink>
                     </div>
                 </Card>
             </div>
@@ -24,7 +26,7 @@ import Card from '@/components/Card.vue'
                             <h5 class="card-title mb-1">For Backend Developer</h5>
                             <p class="text-muted mb-0">Company ABC - New York, USA</p>
                         </div>
-                        <a href="#" class="btn btn-success">Browse Jobs</a>
+                        <RouterLink to="/jobs" class="btn btn-success">Browse Jobs</RouterLink>
                     </div>
                 </Card>
             </div>

@@ -1,18 +1,19 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
+import { RouterView } from 'vue-router';
 
-import Hero from '@/components/Hero.vue';
 
-import HomeCards from '@/components/HomeCards.vue';
-
-import JobsListings from './components/JobsListings.vue';
+// import Hero from '@/components/Hero.vue';
+// import HomeCards from '@/components/HomeCards.vue';
+// import JobsListings from './components/JobsListings.vue';
 </script>
 
 <template>
     <Navbar />
-    <Hero title="Find Your Dream Job" subtitle="Explore thousands of job opportunities that match your skills" />
+    <RouterView />
 
+
+    <!-- <Hero title="Find Your Dream Job" subtitle="Explore thousands of job opportunities that match your skills" />
     <HomeCards />
-
-    <JobsListings :limit="3" :showButton="true" />
+    <JobsListings :limit="3" :showButton="true" /> -->
 </template>

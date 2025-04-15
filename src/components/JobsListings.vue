@@ -2,6 +2,7 @@
 import JobData from '@/jobs.json';
 import JobsListing from './JobsListing.vue';
 import { ref, defineProps, computed } from 'vue';
+import { RouterLink } from 'vue-router';
 
 defineProps({
     limit: Number,
@@ -12,16 +13,6 @@ defineProps({
 });
 
 const jobs = ref(JobData);
-
-const showFullDescription = ref(false);
-
-const truncatedDescription = computed(() => {
-
-    let description = jobs.description;
-
-
-});
-console.log(truncatedDescription);
 </script>
 
 <template>
@@ -39,6 +30,7 @@ console.log(truncatedDescription);
                         <p>
                             <JobsListing :jobs="job" />
                         </p>
+
                         <p class="mb-1"><strong>Salary:</strong> {{ job.salary }}</p>
                         <hr>
                         <h6 class="mb-1">Company: {{ job.company.name }}</h6>
@@ -49,7 +41,7 @@ console.log(truncatedDescription);
         </div>
 
         <div v-if="showButton" class="py-3 d-flex justify-content-center">
-            <a href="/jobs" class="btn btn-success">View All Jobs</a>
+            <RouterLink to="/jobs" class="btn btn-success">View All Jobs</RouterLink>>
         </div>
     </div>
 </template>

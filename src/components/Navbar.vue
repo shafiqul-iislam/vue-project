@@ -1,5 +1,8 @@
 <script setup>
 import logo from '../assets/logo.svg';
+import { RouterLink, useRouter } from 'vue-router';
+
+
 </script>
 
 <template>
@@ -14,10 +17,10 @@ import logo from '../assets/logo.svg';
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <RouterLink class="nav-link active" to="/">Home</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Jobs</a>
+                        <RouterLink class="nav-link" to="/jobs">Jobs</RouterLink>
                     </li>
                 </ul>
             </div>
