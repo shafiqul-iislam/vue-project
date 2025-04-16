@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router';
                 <Card>
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div>
-                            <h5 class="card-title mb-1">From Frontend Developer</h5>
+                            <h5 class="card-title mb-1">For Frontend Developer</h5>
                             <p class="text-muted mb-0">Company XYZ - Remote</p>
                         </div>
                         <RouterLink to="/jobs" class="btn btn-success">Browse Jobs</RouterLink>

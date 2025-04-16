@@ -35,13 +35,14 @@ const jobs = ref(JobData);
                         <hr>
                         <h6 class="mb-1">Company: {{ job.company.name }}</h6>
                         <p class="text-muted">{{ job.company.description }}.</p>
+                        <RouterLink :to="'/job-deatils/' + job.id" class="btn btn-sm btn-success">Read More</RouterLink>
                     </div>
                 </div>
             </div>
         </div>
 
         <div v-if="showButton" class="py-3 d-flex justify-content-center">
-            <RouterLink to="/jobs" class="btn btn-success">View All Jobs</RouterLink>>
+            <RouterLink to="/jobs" class="btn btn-dark">View All Jobs</RouterLink>
         </div>
     </div>
 </template>
