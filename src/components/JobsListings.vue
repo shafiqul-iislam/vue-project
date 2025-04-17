@@ -1,5 +1,5 @@
 <script setup>
-// import JobData from '@/jobs2.json';
+import JobData from '@/jobs2.json';
 import JobsListing from './JobsListing.vue';
 import { ref, reactive, defineProps, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
@@ -13,9 +13,9 @@ defineProps({
     }
 });
 
-const jobs = ref([]);
+// const jobs = ref([]);
 
-// const jobs = ref(JobData);
+const jobs = ref(JobData);
 
 // const state = reactive({
 //     jobs: [],
