@@ -1,38 +1,53 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { reactive, onMounted } from 'vue';
+import { useRoute, RouterLink } from 'vue-router';
+import axios from 'axios';
+
+const route = useRoute();
+const jobId = route.params.id;
+
+const state = reactive({
+    job: {},
+});
+
+
+onMounted(async () => {
+    try {
+        const response = await axios.get(`http://localhost:3001/jobs/${jobId}`);
+        state.job = response.data;
+    } catch (error) {
+        console.log('Error Fetching in Job', error);
+    }
+});
+
 </script>
 
 <template>
     <div class="container">
         <div class="card shadow-lg mt-3">
             <div class="card-body">
-                <h2 class="card-title text-success mb-3">Senior Laravel Developer</h2>
+                <h2 class="card-title text-success mb-3">{{ state.job.title }}</h2>
 
-                <p class="text-muted mb-1"><strong>Company:</strong> CodeWorks Ltd.</p>
+                <p class="text-muted mb-1"><strong>Company:</strong> Yellow Tech</p>
                 <p class="text-muted mb-1"><strong>Location:</strong> Dhaka, Bangladesh</p>
-                <p class="text-muted mb-3"><strong>Job Type:</strong> Full-Time</p>
+                <p class="text-muted mb-3"><strong>Job Type:</strong> {{ state.job.type }}</p>
 
                 <h5 class="text-dark">Job Description</h5>
                 <p>
-                    We are looking for an experienced Laravel developer to join our growing team. The ideal candidate
-                    should have a strong understanding of backend development, RESTful APIs, and MySQL.
+                    {{ state.job.description }}
                 </p>
 
                 <h5 class="text-dark">Responsibilities</h5>
-                <ul>
-                    <li>Develop and maintain web applications using Laravel</li>
-                    <li>Collaborate with front-end developers and designers</li>
-                    <li>Write clean, reusable, and efficient code</li>
-                    <li>Participate in code reviews</li>
-                </ul>
+                <p>
+                    {{ state.job.responsibilities }}
+                </p>
 
                 <h5 class="text-dark">Requirements</h5>
-                <ul>
-                    <li>3+ years of experience with Laravel</li>
-                    <li>Strong knowledge of PHP, MySQL, and Git</li>
-                    <li>Familiar with RESTful APIs and modern design patterns</li>
-                    <li>Good communication and teamwork skills</li>
-                </ul>
+                <p>
+                    {{ state.job.requirements }}
+                </p>
+
+                <p class="text-muted mb-1"><strong>Salary:</strong> {{ state.job.salary }}</p>
 
                 <div class="mt-4">
                     <RouterLink to="/apply" class="btn btn-success me-2">Apply Now</RouterLink>

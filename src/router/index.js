@@ -23,8 +23,8 @@ routes: [
         component: NotFoundView
     },
     {
-        path: "/job-deatils/:id",
-        name: "job-deatils",
+        path: "/job-details/:id",
+        name: "job-details",
         component: JobView
     }
 

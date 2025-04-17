@@ -1,8 +1,9 @@
 <script setup>
-import JobData from '@/jobs.json';
+// import JobData from '@/jobs2.json';
 import JobsListing from './JobsListing.vue';
-import { ref, defineProps, computed } from 'vue';
+import { ref, reactive, defineProps, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
+import axios from 'axios';
 
 defineProps({
     limit: Number,
@@ -12,7 +13,30 @@ defineProps({
     }
 });
 
-const jobs = ref(JobData);
+const jobs = ref([]);
+
+// const jobs = ref(JobData);
+
+// const state = reactive({
+//     jobs: [],
+//     isLoading: true
+// });
+
+onMounted(async () => {
+
+    try {
+        const response = await axios.get('http://localhost:3001/jobs');
+        jobs.value = response.data;
+
+        // state.jobs = response.data;
+    } catch (error) {
+        console.log('Error Fetching in Jobs', error);
+    }
+    // finally {
+    //     state.isLoading = false;
+    // }
+
+});
 </script>
 
 <template>
@@ -35,7 +59,7 @@ const jobs = ref(JobData);
                         <hr>
                         <h6 class="mb-1">Company: {{ job.company.name }}</h6>
                         <p class="text-muted">{{ job.company.description }}.</p>
-                        <RouterLink :to="'/job-deatils/' + job.id" class="btn btn-sm btn-success">Read More</RouterLink>
+                        <RouterLink :to="'/job-details/' + job.id" class="btn btn-sm btn-success">Read More</RouterLink>
                     </div>
                 </div>
             </div>

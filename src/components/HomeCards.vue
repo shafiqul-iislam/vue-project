@@ -12,8 +12,8 @@ import { RouterLink } from 'vue-router';
                 <Card>
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div>
-                            <h5 class="card-title mb-1">For Frontend Developer</h5>
-                            <p class="text-muted mb-0">Company XYZ - Remote</p>
+                            <h5 class="card-title mb-1">For Developer</h5>
+                            <p class="text-muted mb-0">Get Your Dream Job</p>
                         </div>
                         <RouterLink to="/jobs" class="btn btn-success">Browse Jobs</RouterLink>
                     </div>
@@ -23,10 +23,10 @@ import { RouterLink } from 'vue-router';
                 <Card bg="bg-white">
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <div>
-                            <h5 class="card-title mb-1">For Backend Developer</h5>
-                            <p class="text-muted mb-0">Company ABC - New York, USA</p>
+                            <h5 class="card-title mb-1">For Employers</h5>
+                            <p class="text-muted mb-0">Hire The Best Talent</p>
                         </div>
-                        <RouterLink to="/jobs" class="btn btn-success">Browse Jobs</RouterLink>
+                        <RouterLink to="/add-job" class="btn btn-success">Add Job</RouterLink>
                     </div>
                 </Card>
             </div>
