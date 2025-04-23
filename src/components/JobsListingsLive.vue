@@ -1,4 +1,5 @@
 <script setup>
+import JobData from '@/jobs2.json';
 import JobsListing from './JobsListing.vue';
 import { ref, reactive, defineProps, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
@@ -12,33 +13,8 @@ defineProps({
     }
 });
 
-// one way
-const jobs = ref([]);
+const jobs = ref(JobData);
 
-// another way
-// const state = reactive({
-//     jobs: [],
-//     isLoading: true
-// });
-
-onMounted(async () => {
-
-    try {
-        const response = await axios.get('http://localhost:3001/jobs');
-
-        // if use ref
-        jobs.value = response.data;
-
-        // if use reactive
-        // state.jobs = response.data;
-    } catch (error) {
-        console.log('Error Fetching in Jobs', error);
-    }
-    // finally {
-    //     state.isLoading = false;
-    // }
-
-});
 </script>
 
 <template>
