@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router';
                             <h5 class="card-title mb-1">For Employers</h5>
                             <p class="text-muted mb-0">Hire The Best Talent</p>
                         </div>
-                        <RouterLink to="/add-job" class="btn btn-success">Add Job</RouterLink>
+                        <RouterLink to="/job/add" class="btn btn-success">Add Job</RouterLink>
                     </div>
                 </Card>
             </div>

@@ -33,8 +33,8 @@ const isActiveLink = (routePath) => {
                     </li>
                     <li class="nav-item">
                         <RouterLink
-                            :class="[isActiveLink('/add-job') ? 'bg-dark' : '', 'nav-link', 'rounded', 'text-white']"
-                            to="/add-job">
+                            :class="[isActiveLink('/job/add') ? 'bg-dark' : '', 'nav-link', 'rounded', 'text-white']"
+                            to="/job/add">
                             Add Job
                         </RouterLink>
                     </li>
