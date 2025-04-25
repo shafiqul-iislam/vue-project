@@ -10,21 +10,23 @@
       "salary": "BDT 25K-30K",
       "company": {
         "name": "Yellow Tech",
-        "description": "Reputed company leading software company in Bangladesh."
+        "description": "Reputed company leading software company in Bangladesh.",
+        "location": "Dhaka"
       }
     },
     {
       "id": "2",
-      "title": "Senior Laravel Developer",
-      "type": "Full-Time",
-      "description": "We are seeking a talented Back-End Developer to join Our team in Dhaka. Your role is to develop a web application using Laravel.Explore thousands of job opportunities that match your skills.",
-      "responsibilities": "We are seeking a talented Back-End Developer to join Our team in Dhaka. Your role is to develop a web application using Laravel.Explore thousands of job opportunities that match your skills.",
-      "requirements": "3+ years of experience with Laravel. Good communication and teamwork skills",
-      "salary": "BDT 35K-40K",
+      "jobTitle": "Laravel Developer",
       "company": {
         "name": "Yellow Tech",
-        "description": "Reputed company leading software company in Bangladesh."
-      }
+        "description": "Reputed company leading software company in Bangladesh.",
+        "location": "Dhaka, Bangladesh"
+      },
+      "jobType": "Full-Time",
+      "description": "We are seeking a talented Back-End Developer to join Our team in Dhaka. Your role is to develop a web application using Laravel.Explore thousands of job opportunities that match your skills.",
+      "salary": "BDT 35K-40K",
+      "responsibilities": "Your role is to develop a web application using Laravel.",
+      "requirements": "3+ years of experience with Laravel. Good communication and teamwork skills"
     },
     {
       "id": "3",
@@ -36,30 +38,20 @@
       "salary": "BDT 30K-35K",
       "company": {
         "name": "Yellow Tech",
-        "description": "Reputed company leading software company in Bangladesh."
+        "description": "Reputed company leading software company in Bangladesh.",
+        "location": "Dhaka"
       }
     },
     {
       "id": "4",
-      "title": "Python Developer",
-      "type": "Full-Time",
-      "description": "We are seeking a talented Python Developer to join Our team in Dhaka. Your role is to develop a web application using Python.",
-      "responsibilities": "We are seeking a talented Python Developer to join Our team in Dhaka. Your role is to develop a web application using Python.",
-      "requirements": "3+ years of experience with Laravel. Good communication and teamwork skills",
-      "salary": "BDT 40K-45K",
-      "company": {
-        "name": "Yellow Tech",
-        "description": "Reputed company leading software company in Bangladesh."
-      }
-    },
-    {
-      "id": "bc83",
       "title": "SEO Expert",
       "company": {
-        "name": "Yellow Tech"
+        "name": "Yellow Tech",
+        "description": "Reputed company leading software company in Bangladesh.",
+        "location": "Dhaka"
       },
       "location": "Dhaka",
-      "type": "full-time",
+      "type": "Full-Time",
       "description": "Do Everythings",
       "salary": "20K - 30K",
       "responsibilities": "Make Website Visible",
@@ -69,7 +61,9 @@
       "id": "648b",
       "title": "Google Expert",
       "company": {
-        "name": "Yellow Tech"
+        "name": "Yellow Tech",
+        "description": "Reputed company leading software company in Bangladesh.",
+        "location": "Dhaka"
       },
       "location": "Dhaka",
       "type": "full-time",

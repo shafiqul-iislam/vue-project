@@ -3,8 +3,29 @@ import axios from 'axios';
 import { ref, reactive, onMounted, computed } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
 import JobData from '@/jobs2.json';
+import { useToast } from 'vue-toastification';
 
 const route = useRoute();
+
+const toast = useToast();
+
+const deleteJob = async (id) => {
+
+    console.log(id);
+
+    // try {
+    //     const response = await axios.delete(`http://localhost:3001/jobs/${id}`);
+    //     if (response.status == 200) {
+
+    //         toast.success('Job deleted successfully');
+
+    //         // alert('Job deleted successfully');
+    //         // window.location.href = '/jobs';
+    //     }
+    // } catch (error) {
+    //     console.log('Error deleting job', error);
+    // }
+};
 
 const job = computed(() => {
     const id = Number(route.params.id);
@@ -34,9 +55,15 @@ const job = computed(() => {
 
                 <p class="text-muted mb-1"><strong>Salary:</strong> {{ job.salary }}</p>
 
-                <div class="mt-4">
-                    <RouterLink to="/apply" class="btn btn-success me-2">Apply Now</RouterLink>
-                    <RouterLink to="/jobs" class="btn btn-outline-secondary">Back to Jobs</RouterLink>
+                <div class="mt-4 d-flex justify-content-between">
+                    <div class="">
+                        <RouterLink to="/apply" class="btn btn-success me-2">Apply Now</RouterLink>
+                        <RouterLink to="/jobs" class="btn btn-outline-secondary">Back to Jobs</RouterLink>
+                    </div>
+                    <div class="">
+                        <RouterLink :to="'/job/edit/' + job.id" class="btn btn-success me-2">Edit</RouterLink>
+                        <button @click="deleteJob(job.id)" class="btn btn-danger">Delete</button>
+                    </div>
                 </div>
             </div>
         </div>

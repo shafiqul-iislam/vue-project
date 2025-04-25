@@ -9,7 +9,8 @@
         "salary": "BDT 25K-30K",
         "company": {
             "name": "Yellow Tech",
-            "description": "Reputed company leading software company in Bangladesh."
+            "description": "Reputed company leading software company in Bangladesh.",
+            "location": "Dhaka"
         }    
     },
     {    
@@ -22,7 +23,8 @@
         "salary": "BDT 35K-40K",
         "company": {
             "name": "Yellow Tech",
-            "description": "Reputed company leading software company in Bangladesh."
+            "description": "Reputed company leading software company in Bangladesh.",
+            "location": "Dhaka"
         }    
     },
     {    
@@ -35,7 +37,8 @@
         "salary": "BDT 30K-35K",
         "company": {
             "name": "Yellow Tech",
-            "description": "Reputed company leading software company in Bangladesh."
+            "description": "Reputed company leading software company in Bangladesh.",
+            "location": "Dhaka"
         }    
     },
     {    
@@ -48,7 +51,8 @@
         "salary": "BDT 40K-45K",
         "company": {
             "name": "Yellow Tech",
-            "description": "Reputed company leading software company in Bangladesh."
+            "description": "Reputed company leading software company in Bangladesh.",
+            "location": "Dhaka"
         }    
     }
 ]
