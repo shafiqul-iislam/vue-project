@@ -13,6 +13,9 @@ const deleteJob = async (id) => {
 
     console.log(id);
 
+    toast.success('Job deleted successfully');
+
+
     // try {
     //     const response = await axios.delete(`http://localhost:3001/jobs/${id}`);
     //     if (response.status == 200) {

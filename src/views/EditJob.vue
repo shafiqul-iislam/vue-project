@@ -25,7 +25,7 @@ const updateForm = reactive({
 
 const handleUpdateSubmit = () => {
 
-    console.log(form);
+    console.log(updateForm);
 
     // // in this way i can put the data in the database using laravel
     // try {
